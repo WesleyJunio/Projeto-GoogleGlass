@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Google Glass</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
+    <link rel="icon" type="image/jpg" href="_imagens/glass-oculos-preto-peq.png">
+    <script src="https://kit.fontawesome.com/9b9a64606a.js" crossorigin="anonymous"></script>
+    <script src="_javascript/funcoes.js"></script>
+</head>
+
+<body>
+    <header id="fundo-contato">
+        <img src="_imagens/glass-logo-peq.jpg" alt="logo-principal">
+        <hgroup id="principal">
+            <div class="grupo-principal">
+                <h1>Fale Conosco</h1>
+            </div>
+            <div class="grupo-principal">
+                <h3>Entre em contato pelo formulário</h3>
+            </div>
+        </hgroup>
+        <nav id="menu">
+            <!-- Menu Principal -->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="specs.html">Especificações</a>
+                </li>
+                <li>
+                    <a href="fotos.html">Fotos</a>
+                </li>
+                <li>
+                    <a href="multimidia.html">Multimídia</a>
+                </li>
+                <li>
+                    <a href="fale-conosco.html">Fale conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="interface-contato">
+            <header class="cabecalho">
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                <h2>por Wesley Junio</h2>
+                <h4>Atualizado em 01/Maio/2021</h4>
+            </header>
+            <div id="background">
+            <form method="POST" action="#" oninput="cal_Valor();">
+                <fieldset id="contato">
+                    <legend>Identificação</legend>
+                    <div class="label-float">
+                        <input type="text" name="nome" id="nome" placeholder=" " required>
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="email" name="email" id="email" placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="date" name="data_nasc" id="data_nasc">
+                        <label for="data_nasc">Data de Nascimento</label>
+                    </div>
+                    <div class="label-float-generico">
+                        <label for="sexo">Gênero</label>
+                        <div class="genero">
+                            <input type="radio" name="sexo" id="masculino" value="masculino">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="genero">
+                            <input type="radio" name="sexo" id="feminino" value="feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div class="label-float">
+                        <input type="text" name="logradouro" id="logradouro" placeholder=" ">
+                        <label for="logradouro">Logradouro</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="number" name="numero" id="numero" placeholder="Numero">
+                        <label for="numero">Número</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="text" name="estado" id="estado" placeholder="Estado">
+                        <label for="estado">Estado</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="text" name="cidade" id="cidade" placeholder="Cidade" list="cidades">
+                        <label for="cidade">Cidade</label>
+                        <datalist id="cidades">
+                            <option value="Bom Despacho"></option>
+                            <option value="Itaúna"></option>
+                            <option value="Belo Horizonte"></option>
+                            <option value="Divinopolis"></option>
+                            <option value="Moema"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <div class="label-float">
+                        <input type="text" name="grau" id="grau" placeholder="Grau" list="graus">
+                        <label for="grau">Grau de Emergência</label>
+                        <datalist id="graus">
+                            <option value=""></option>
+                            <option value="Urgente"></option>
+                            <option value="Regular"></option>
+                            <option value="Baixo"></option>
+                        </datalist>
+                    </div>
+                    <div class="label-float">
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        <label for="mensagem">Mensagem</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Quero um Google Glass</legend>
+                    <p class="paragrafo"><input type="checkbox" name="marcar" id="marcar">
+                    <label>Gostaria de adquirir um Google Glass quando disponível</label></p> 
+                    <div class="label">
+                        <label for="cor" id="desc">Cor</label>
+                        <input type="color" name="cor" id="color">
+                    </div>
+                    <div class="label-float">
+                        <input type="number" name="quantidade" id="quantidade" placeholder=" " min="1" max="10">
+                        <label for="quantidade">Quantidade</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="text" name="preco" id="preco" placeholder=" " readonly>
+                        <label for="preco">Preço R$</label>
+                    </div>
+                </fieldset>
+                    <button id="botao">ENVIAR</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+
+    <footer id="rodape">
+        <div id="esquerda">
+            <img src="_imagens/google-939112_640.png" alt="Logo Google">
+            <p>Uma empresa internacional de excelência e de qualidade espetacular</p>
+            <p>Copyright &copy; 2021 - by Wesley Júnio</p>
+        </div>
+        <div id="direita">
+            <p>
+                <a id="facebook" href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-square"> Facebook </i>
+                </a>
+                <a id="youtube" href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube-square"> Youtube</i>
+                </a>
+                <a id="twiter" href="http://www.twiter.com" target="_blank">
+                    <i class="fab fa-twitter-square"> Twiter</i>
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

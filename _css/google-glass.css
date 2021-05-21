@@ -1,0 +1,34 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+article{
+    margin-bottom: 800px;
+}
+article h1{
+    color: #424242;
+}
+article h2{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 15pt;
+    padding: 5px;
+    margin: 0px;
+}
+article h3{
+    font-size: 13pt;
+    color: royalblue;
+}
+.img{
+    display: block;
+    margin: auto;
+}
+.img-dir{
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
